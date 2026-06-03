@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameRig AI | The Gamer-First PC Buying Platform</title>
+  <meta name="description" content="GameRig AI helps gamers choose, build, upgrade, compare, buy, learn about, and optimize gaming PCs without needing to understand PC parts." />
+  <meta property="og:title" content="GameRig AI" />
+  <meta property="og:description" content="The future market leader of gamer-first PC buying." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="GameRig AI home">
+      <span class="brand-mark">G</span>
+      <span>GameRig AI</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#builder">Builder</a>
+      <a href="#ps5">PS5 Destroyer</a>
+      <a href="#battles">Battles</a>
+      <a href="#ecosystem">Ecosystem</a>
+      <a href="#roadmap">Roadmap</a>
+    </nav>
+    <a class="header-cta" href="#builder">Start Build</a>
+    <button class="menu-button" aria-label="Open menu">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Gamer-first PC buying</p>
+        <h1>Choose the perfect gaming PC without becoming a hardware detective.</h1>
+        <p class="hero-text">
+          GameRig AI starts with your games, budget, FPS target, region, and upgrade goals. Then it builds the PC logic for you: parts, performance, value, bottlenecks, prices, and future upgrades.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#builder">Try the AI Builder</a>
+          <a class="button secondary" href="#architecture">See the System</a>
+        </div>
+        <div class="trust-row" aria-label="Platform highlights">
+          <span>Game-first</span>
+          <span>Price-aware</span>
+          <span>Beginner-safe</span>
+          <span>SEO-ready</span>
+        </div>
+      </div>
+
+      <aside class="hero-panel glass-card" aria-label="GameRig AI quick simulator">
+        <div class="panel-topline">
+          <span class="live-dot"></span>
+          <span>Live concept engine</span>
+        </div>
+        <h2>Can 3500 AED beat PS5?</h2>
+        <div class="mini-score">
+          <div>
+            <span class="score-label">PC Score</span>
+            <strong>86</strong>
+          </div>
+          <div>
+            <span class="score-label">PS5 Score</span>
+            <strong>74</strong>
+          </div>
+        </div>
+        <div class="result-pill win">Likely beats PS5 for esports FPS</div>
+        <ul class="clean-list">
+          <li>Fortnite: high refresh advantage</li>
+          <li>FC 26: smooth 1080p/1440p target</li>
+          <li>Minecraft: mod and shader flexibility</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="metric-strip" aria-label="GameRig AI concept statistics">
+      <article>
+        <strong>20+</strong>
+        <span>Core platform modules</span>
+      </article>
+      <article>
+        <strong>1000s</strong>
+        <span>SEO page combinations</span>
+      </article>
+      <article>
+        <strong>0-100</strong>
+        <span>Future-proof score</span>
+      </article>
+      <article>
+        <strong>1</strong>
+        <span>Simple gamer-first answer</span>
+      </article>
+    </section>
+
+    <section id="builder" class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Feature 01</p>
+        <h2>Game-First Builder</h2>
+        <p>Pick your games and target. GameRig AI returns a smart build direction, not a confusing parts maze.</p>
+      </div>
+
+      <div class="tool-layout">
+        <form class="tool-card glass-card" id="builderForm">
+          <label>
+            Games
+            <select id="gameSelect" multiple size="5">
+              <option selected>Fortnite</option>
+              <option selected>FC 26</option>
+              <option>Minecraft</option>
+              <option>GTA VI</option>
+              <option>Valorant</option>
+              <option>Roblox</option>
+              <option>CS2</option>
+              <option>Call of Duty</option>
+              <option>Marvel Rivals</option>
+            </select>
+          </label>
+
+          <div class="form-grid">
+            <label>
+              Budget
+              <input id="budgetInput" type="number" min="1200" max="15000" value="3500" />
+            </label>
+            <label>
+              Currency
+              <select id="currencyInput">
+                <option>AED</option>
+                <option>USD</option>
+                <option>GBP</option>
+                <option>EUR</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-grid">
+            <label>
+              Resolution
+              <select id="resolutionInput">
+                <option>1080p</option>
+                <option selected>1440p</option>
+                <option>4K</option>
+              </select>
+            </label>
+            <label>
+              FPS Target
+              <input id="fpsInput" type="number" min="30" max="360" value="144" />
+            </label>
+          </div>
+
+          <div class="form-grid">
+            <label>
+              Parts
+              <select id="conditionInput">
+                <option>New</option>
+                <option selected>Mixed</option>
+                <option>Used</option>
+              </select>
+            </label>
+            <label>
+              Region
+              <select id="regionInput">
+                <option selected>UAE</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>EU</option>
+                <option>India</option>
+              </select>
+            </label>
+          </div>
+
+          <button class="button primary full" type="submit">Generate Build Direction</button>
+        </form>
+
+        <article class="result-card glass-card" id="builderResult" aria-live="polite">
+          <p class="eyebrow">AI Recommendation</p>
+          <h3>Your build result will appear here.</h3>
+          <p>Choose your games and hit the button. This static demo uses sample logic to show how the real platform would behave.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="ps5" class="section-block two-column">
+      <div class="section-heading left">
+        <p class="eyebrow">Feature 02</p>
+        <h2>PS5 Destroyer</h2>
+        <p>The viral hook: users ask whether their budget can beat a PS5 or PS5 Pro in their country.</p>
+      </div>
+
+      <div class="tool-card glass-card">
+        <form id="ps5Form">
+          <div class="form-grid">
+            <label>
+              Budget
+              <input id="ps5Budget" type="number" value="3500" min="1000" max="20000" />
+            </label>
+            <label>
+              Country
+              <select id="ps5Country">
+                <option selected>UAE</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>EU</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            Main game type
+            <select id="ps5GameType">
+              <option value="esports" selected>Esports: Fortnite, Valorant, Roblox</option>
+              <option value="mixed">Mixed: FC 26, Minecraft, COD</option>
+              <option value="aaa">AAA: GTA VI, heavy story games</option>
+            </select>
+          </label>
+          <button class="button primary full" type="submit">Check PS5 Battle</button>
+        </form>
+        <div class="share-card" id="ps5Result">
+          <span class="badge">Result Card</span>
+          <h3>Enter a budget to battle PS5.</h3>
+          <p>The verdict will show value, waiting advice, and shareable summary text.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="battles" class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Feature 03</p>
+        <h2>Build Battles</h2>
+        <p>Compare GPUs, CPUs, full builds, budgets, and consoles with a simple winner.</p>
+      </div>
+
+      <div class="battle-grid">
+        <button class="battle-card glass-card" data-battle="RTX 5070|RX 9070|RX 9070 wins on value if priced lower; RTX 5070 wins if ray tracing and AI features matter most.">
+          <span>GPU Battle</span>
+          <strong>RTX 5070 vs RX 9070</strong>
+        </button>
+        <button class="battle-card glass-card" data-battle="2500 AED PC|3500 AED PC|3500 AED wins. The extra budget usually unlocks a much stronger GPU and better upgrade room.">
+          <span>Budget Battle</span>
+          <strong>2500 AED vs 3500 AED</strong>
+        </button>
+        <button class="battle-card glass-card" data-battle="PS5|Gaming PC|PC wins for flexibility and high-FPS esports. PS5 wins for simple couch gaming.">
+          <span>Platform Battle</span>
+          <strong>PS5 vs PC</strong>
+        </button>
+      </div>
+
+      <article class="result-card glass-card battle-result" id="battleResult">
+        <p class="eyebrow">Battle Verdict</p>
+        <h3>Select a battle above.</h3>
+        <p>GameRig AI turns arguments into clean comparison cards.</p>
+      </article>
+    </section>
+
+    <section id="ecosystem" class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">The Ecosystem</p>
+        <h2>Not a simple PC builder</h2>
+        <p>GameRig AI grows into a full decision platform for gaming hardware.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card"><span>01</span><h3>Game Builder</h3><p>Builds PCs from games, FPS, budget, region, and upgrade goals.</p></article>
+        <article class="feature-card"><span>02</span><h3>Hardware DB</h3><p>GPUs, CPUs, benchmarks, power, value, used pricing, pairings.</p></article>
+        <article class="feature-card"><span>03</span><h3>Upgrade Simulator</h3><p>Finds cheapest, smartest, and biggest-FPS upgrades.</p></article>
+        <article class="feature-card"><span>04</span><h3>Benchmark Center</h3><p>Search performance by game, part, resolution, and settings.</p></article>
+        <article class="feature-card"><span>05</span><h3>Learning Center</h3><p>CPU, GPU, RAM, SSD, cooling, networking, and monitors in simple words.</p></article>
+        <article class="feature-card"><span>06</span><h3>Price Tracker</h3><p>Amazon, Microless, Noon, major retailers, charts, and alerts.</p></article>
+        <article class="feature-card"><span>07</span><h3>Build Network</h3><p>Save, share, rate, follow creators, and showcase builds.</p></article>
+        <article class="feature-card"><span>08</span><h3>Marketplace</h3><p>Buy, sell, trade, rate sellers, and flag scam risk.</p></article>
+      </div>
+    </section>
+
+    <section id="architecture" class="section-block split-panel">
+      <div>
+        <p class="eyebrow">Architecture</p>
+        <h2>Database-first, AI-second, trust always.</h2>
+        <p>The real product should not let AI invent random parts. The engine should pull from structured hardware, benchmark, pricing, and compatibility data. AI explains the decision after the system calculates it.</p>
+        <div class="stack-tags">
+          <span>Next.js</span><span>PostgreSQL</span><span>Prisma</span><span>Supabase</span><span>Meilisearch</span><span>Redis</span><span>Stripe</span><span>PostHog</span>
+        </div>
+      </div>
+      <pre class="code-card"><code>users
+cpus
+gpus
+games
+benchmarks
+retailers
+prices
+builds
+build_parts
+build_scores
+comparisons
+upgrade_paths
+marketplace_listings
+seo_pages
+articles</code></pre>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">SEO Engine</p>
+        <h2>Thousands of pages that answer real gamer searches</h2>
+      </div>
+      <div class="seo-grid">
+        <article><strong>Best PC for Fortnite</strong><span>/best-pc-for-fortnite</span></article>
+        <article><strong>Best PC under 3500 AED</strong><span>/best-gaming-pc-under-3500-aed</span></article>
+        <article><strong>RTX 5070 vs RX 9070</strong><span>/compare/rtx-5070-vs-rx-9070</span></article>
+        <article><strong>Best PC for FC 26</strong><span>/best-pc-for-fc-26</span></article>
+        <article><strong>PS5 vs PC UAE</strong><span>/compare/ps5-vs-gaming-pc-uae</span></article>
+        <article><strong>Best used GPU under 1000 AED</strong><span>/best-used-gpu-under-1000-aed</span></article>
+      </div>
+    </section>
+
+    <section id="roadmap" class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Roadmap</p>
+        <h2>Build order that does not explode the startup</h2>
+      </div>
+      <div class="timeline">
+        <article>
+          <span>Phase 1</span>
+          <h3>MVP</h3>
+          <p>Game builder, PS5 Destroyer, Build Battles, basic hardware database, first SEO pages.</p>
+        </article>
+        <article>
+          <span>Phase 2</span>
+          <h3>Trust Engine</h3>
+          <p>Confidence scores, price history, used value, benchmark sources, scam warnings.</p>
+        </article>
+        <article>
+          <span>Phase 3</span>
+          <h3>Community</h3>
+          <p>Saved builds, creator profiles, ratings, guides, showcases, build sharing.</p>
+        </article>
+        <article>
+          <span>Phase 4</span>
+          <h3>Marketplace</h3>
+          <p>Listings, verified sellers, payment flow, trade-in logic, dispute protection.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block monetization">
+      <div>
+        <p class="eyebrow">Business Model</p>
+        <h2>Monetize without burning trust</h2>
+        <p>GameRig AI can earn through affiliates, premium accounts, price alerts, marketplace fees, consultations, and sponsored placements. Sponsored parts must always be clearly labeled.</p>
+      </div>
+      <div class="money-grid">
+        <span>Affiliate links</span>
+        <span>Premium accounts</span>
+        <span>Marketplace fees</span>
+        <span>Price alerts</span>
+        <span>Build consultations</span>
+        <span>Sponsored alternatives</span>
+      </div>
+    </section>
+
+    <section class="cta-section glass-card">
+      <p class="eyebrow">Final Positioning</p>
+      <h2>GameRig AI becomes the default start point for gaming PCs.</h2>
+      <p>A gamer should never need another PC website to choose, compare, upgrade, learn, benchmark, or buy.</p>
+      <a class="button primary" href="#builder">Try the demo</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <strong>GameRig AI</strong>
+    <span>Static Netlify prototype. Replace sample logic with live database, real benchmarks, and retailer pricing before launch.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
